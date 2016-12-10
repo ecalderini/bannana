@@ -1,0 +1,160 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+div.hikashop_categories_listing_main { margin: 0; }
+div.hikashop_submodules { padding: 0; }
+/*buttons*/
+a.hikashop_cart_button, a.hikashop_compare_button, .hikashop_cart_input_button { color: #fff!important; }
+a.hikashop_cart_button:hover, a.hikashop_compare_button:hover, .hikashop_cart_input_button:hover { border: none; }
+/* Category description */
+div.hikashop_category_description { display: block; overflow: hidden; margin: 0 auto 40px auto; }
+div.hikashop_category_description img.hikashop_category_image { margin: 0 40px 0 0; width: 20%; float: left; }
+/* Categories */
+div.hikashop_subcategories { display: block; overflow: hidden; margin: 0 -15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+div.hikashop_subcontainer { padding: 0; display: block; overflow: hidden; position: relative; }
+/*image*/
+div.hikashop_category_image { margin: 0 auto 30px auto; }
+/*name*/
+span.hikashop_category_name { display: block; overflow: hidden; color: #212121; font-size: 120%; line-height: normal; }
+span.hikashop_category_name a { color: #212121; font-weight: 700; margin: 0 auto; font-size: 120%; text-transform: uppercase; }
+/* Products list*/
+div.hikashop_products { display: block; overflow: hidden; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+/*image*/
+div.hikashop_product_image, div.hikashop_product_image_subdiv, div.hikashop_product_image img { padding: 0; }
+div.hikashop_product_image { margin: 0 auto; }
+/*vote*/
+.hikashop_listing_img_title .hikashop_vote_stars { padding: 5px 0; }
+/*price*/
+span.hikashop_product_price { font-size: 120%; font-style: normal; font-weight: 900; font-family: inherit; }
+span.hikashop_product_price_per_unit { display: none; }
+/*title*/
+span.hikashop_product_name { display: block; overflow: hidden; margin: 0 auto; padding: 0; line-height: normal; }
+.hikashop_product_name a { color: #212121; font-weight: 700; font-size: 120%; }
+/*count*/
+.hikashop_listing_img_title span.hikashop_product_stock_count { display: none; overflow: hidden; line-height: normal; margin: 0 auto 10px auto; }
+/*buttons*/
+.hikashop_listing_img_title .hikashop_cart_input_button { border: none; color: #fff!important; line-height: normal; margin: 0 auto; width: 80px!important; height: 80px; position: absolute; top: 0; left: 0; text-indent: -9999px; background: none; }
+.hikashop_listing_img_title .hikashop_cart_input_button:hover { border: none; background: none; }
+/*icon*/
+.hikashop_listing_img_title .yj-shop-icon { display: block; overflow: hidden; width: 80px; height: 80px; line-height: 80px; text-align: center; position: absolute; left: 0; right: 0; top: -80px; margin: auto; font-size: 140%; color: #fff; }
+.hikashop_listing_img_title .yj-shop-icon:hover { background: #212121; }
+/*hover*/
+.hikashop_listing_img_title:hover .yj-shop-icon { top: 20%; }
+.hikashop_listing_img_title:hover .hikashop_product_listing_image { opacity: 0.5; }
+/* Product view */
+div..hikashop_product_main_image_thumb, div.hikashop_product_main_image, div.hikashop_product_main_image_subdiv, img#hikashop_main_image {
+ width:100%!important;
+ height:auto!important;
+}
+img.hikashop_child_image { margin: 10px; height: 70px; }
+/*right*/
+/*brand*/
+.yj-hika-brand { display: block; overflow: hidden; padding: 0 0 5px 0; }
+/*title*/
+#hikashop_product_top_part h1 { font-size: 200%; color: #212121; font-weight: 900; border-bottom: none; padding: 0; margin: 0 auto; text-transform: uppercase; }
+/*vote*/
+.hikashop_vote_stars { padding: 10px 0 20px 0; }
+.hk-rate-star { vertical-align: middle; }
+/*descriptiion*/
+.hikashop_product_bottom_part { padding: 20px 0 10px 0; border-top: 1px solid #EBEBEB; border-bottom: 1px solid #EBEBEB; }
+#hikashop_product_description_main { padding: 0; color: #888888; }
+/*price*/
+.hikashop_product_right_part .hikashop_product_price_main { display: block; overflow: hidden; }
+.hikashop_product_right_part .hikashop_product_price_full { padding: 20px 0; margin: 0!important; }
+.hikashop_product_right_part span.hikashop_product_price { font-size: 200%; }
+/*count*/
+span.hikashop_product_stock_count { display: none; overflow: hidden; line-height: normal; margin: 0 auto 10px auto; }
+/*quantity*/
+.hikashop_product_quantity_input_div_simplified { margin: 0 10px 0 0; }
+.hikashop_product_stock .hikashop_product_quantity_field { border: 1px solid #EBEBEB; width: 60px; height: 36px; }
+a.hikashop_product_quantity_field_change, a.hikashop_product_quantity_field_change:hover { margin: 5px 10px; }
+/*button*/
+.hikashop_product_right_part .yj-shop-icon:before { display: none; }
+.hikashop_product_right_part .hikashop_cart_input_button { border: none; color: #fff!important; line-height: normal; }
+/*comments*/
+.hikashop_listing_comment, .hikashop_form_comment { color: #212121; font-weight: 700; font-size: 110%; }
+.hika_comment_listing td { font-size: 90%; padding: 10px 15px; }
+.hika_comment_listing_name { font-weight: bold; color: #212121; text-transform: uppercase; }
+.hika_comment_listing_content { padding: 0; color: #888888; }
+#hikashop_comment_form .hikashop_vote_stars { display: none; }
+tr.hikashop_comment_form_name td:first-child { width: 7%; }
+.hikashop_comment_form input { border: none; padding: 10px 15px; background: #f6f6f6; }
+.hikashop_vote_form .hikashop_comment_textarea { border: 1px solid #EBEBEB; color: #888888; padding: 10px 15px; font-size: 90%; margin: 15px 0 5px 0; }
+/* Checkout */
+#hikashop_checkout_page h1 { font-size: 120%; color: #212121; font-weight: 700; border-bottom: 1px solid #EBEBEB; padding: 0 0 20px 0; margin: 0 auto 20px auto; }
+.hikashop_checkout_login { width: 100%; }
+#hikashop_checkout_login_left_part, #hikashop_checkout_login_right_part { width: 50%; }
+#hikashop_checkout_login_left_part h2, #hikashop_checkout_login_right_part h2, #hikashop_checkout_login_right_part h3 { color: #212121; font-weight: 700; font-size: 120%; margin: 0 auto 20px auto; }
+.hikashop_registration_address_info_title { margin: 40px auto 20px auto!important; }
+/*input*/
+#hikashop_checkout_login_left_part input, #hikashop_checkout_login_right_part input, #hikashop_checkout_login_left_part select, #hikashop_checkout_login_right_part select { width: 95%; border: none; padding: 10px 15px; background: #f6f6f6; }
+#hikashop_checkout_login_right_part table { width: 100%; }
+#hikashop_checkout_login_left_part .hikashop_cart_input_button, #hikashop_checkout_login_right_part .hikashop_cart_input_button { width: auto; padding: 10px 25px; height: auto; line-height: normal; border: none; margin: 0; }
+#hikashop_checkout_login_left_part .hikashop_cart_input_button:hover, #hikashop_checkout_login_right_part .hikashop_cart_input_button:hover { background: #212121; }
+#hikashop_checkout_login_left_part li a { color: #212121; font-size: 90%; }
+#hikashop_checkout_login_left_part li a:hover { font-size: 90%; }
+#hikashop_checkout_login_right_part tr td { padding: 10px 0; }
+/*payment*/
+#hikashop_payment_methods fieldset legend { font-weight: 700; font-size: 120%; margin: 0; padding: 20px; color: #212121; text-transform: none; }
+#hikashop_payment_methods, #hikashop_payment_methods td, #hikashop_payment_methods .hikashop_credit_card td { background: #f6f6f6; }
+#hikashop_payment_methods { padding: 20px; margin: 0 auto 50px auto; }
+#hikashop_payment_methods td { padding: 0; }
+#hikashop_payment_methods tr td:first-child { padding: 5px 5px 5px 20px; }
+.hikashop_checkout_payment_description { margin-left: 0; }
+.hikashop_checkout_payment_name { color: #212121; font-weight: 700; }
+#hikashop_payment_methods tr td input { border: 1px solid #EBEBEB; background: none; padding: 5px 10px; font-size: 90%; }
+#hikashop_checkout_coupon { color: #212121; font-size: 100%; font-weight: 700; text-transform: none; }
+#hikashop_checkout_coupon input { margin: 0px 5px; padding: 10px 15px; color: #888888; border: none; font-weight: normal; background: #f6f6f6; }
+#hikashop_checkout_coupon .hikashop_cart_input_button { border: none; padding: 9px 30px; border: none; margin: 0; display: inline; }
+#hikashop_checkout_coupon .hikashop_cart_input_button:hover { border: none; background: #212121; }
+/*checkout cart*/
+.hikashop_cart_title { color: #212121; font-weight: 700; text-transform: none; }
+.hikashop_product_checkout_cart_image { width: 25%; }
+.hikashop_cart_product_name a { font-size: 100%; }
+.hikashop_checkout_cart td, .hikashop_checkout_cart thead th { text-align: left; }
+.hikashop_checkout_cart tr, .hikashop_checkout_cart thead th { border-color: #EBEBEB; }
+.hikashop_product_quantity_field { border: 1px solid #EBEBEB; background: none; }
+#hikashop_checkout_cart_final_total_title { color: #212121; font-weight: 700; font-size: 100%; }
+span.hikashop_checkout_cart_final_total { font-weight: 700; font-style: normal; font-size: 130%; font-family: inherit; color: #212121; }
+/* Infos */
+h1#hikashop_address_form_header_iframe { font-weight: 700; text-transform: none; font-size: 150%; margin: 0; padding: 0 0 20px 0; color: #212121; }
+#hikashop_address_form_span_iframe input, #hikashop_address_form_span_iframe select { border: 1px solid #EBEBEB; padding: 8px 15px; }
+#hikashop_address_form_span_iframe .hikashop_cart_input_button { border: none; padding: 9px 30px; }
+#hikashop_address_form_span_iframe tr { margin: 0 auto 10px auto; overflow: hidden; display: block; }
+#hikashop_address_form_span_iframe tr td.key { width: 85px; }
+#hikashop_address_form_header_iframe input { border-radius: 0; }
+/* Billing */
+#hikashop_checkout_billing_address fieldset legend { font-size: 120%; color: #212121; font-weight: 700; text-transform: none; }
+#hikashop_checkout_billing_address tr td { border: none; padding: 0; }
+#hikashop_checkout_billing_address { margin: 0 auto 50px auto; }
+.hikashop_checkout_billing_address_info { color: #888888; font-size: 100%; line-height: 28px; }
+/*pop uop*/
+div.hikashop_success { background: none; border-color: #EBEBEB; border-width: 1px; color: #212121; font-size: 110%; text-align: center; }
+div.hikashop_messages { padding: 10px 0; margin: 0; }
+div.hikashop_success ul { margin: 0 auto; }
+/* Footer pagination*/
+.hikashop_products_pagination .list-footer .limit, .hikashop_subcategories_pagination .list-footer .limit { color: #212121; font-weight: normal; margin-bottom: 20px; }
+.hikashop_products_pagination .list-footer .limit .inputbox { padding: 5px; }
+.list-footer span.pagenav, .hikashop_subcategories_pagination .list-footer span.pagenav, .pagenav_previous_chevron, .pagenav_start_chevron, .pagenav_next_chevron, .pagenav_end_chevron { color: #212121; border: 1px solid #EBEBEB; width: 20px; height: 20px; padding: 4px; margin: 0 2px; line-height: 20px; }
+.hikashop_products_pagination .list-footer .pagenav, .hikashop_subcategories_pagination .list-footer .pagenav { color: #212121; font-weight: 700; background: none; border: 1px solid #EBEBEB; line-height: normal; padding: 5px 10px; }
+/*hover*/
+.hikashop_products_pagination .list-footer a.pagenav:hover, .hikashop_subcategories_pagination .list-footer a.pagenav:hover, .list-footer span.pagenav:hover, .hikashop_subcategories_pagination .list-footer span.pagenav:hover, .list-footer a.pagenav:hover { color: #fff!important; border: 1px solid; }
+.pagenav_start_chevron { background-position: 10px -22px; }
+.pagenav_previous_chevron { background-position: -19px -22px; }
+.pagenav_next_chevron { background-position: -49px -23px; }
+.pagenav_end_chevron { background-position: -78px -22px; }
+/*hover*/
+.pagenav_start_chevron:hover { background-position: 10px 9px; }
+.pagenav_previous_chevron:hover { background-position: -19px 9px; }
+.pagenav_next_chevron:hover { background-position: -49px 8px; }
+.pagenav_end_chevron:hover { background-position: -78px 9px; }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="template-settings">
+	<fields name="params" addfieldpath="/plugins/system/yjsg/elements">
+		<fieldset name="YJSG_STYLE_SETTINGS">
+			<field name="yjsg_get_styles" type="yjsglist" default="orange|f1c40f" label="YJSG_COLOR_LABEL" description="YJSG_COLOR_DESC" yjsgstyles="orange==f1c40f|blue==22A7F0|red==F64747|green==87D37C">
+				<option value="orange|f1c40f">Orange</option>
+				<option value="blue|22A7F0">Blue</option>
+				<option value="red|F64747">Red</option>
+				<option value="green|87D37C">Green</option>
+			</field>
+			<field name="selectors_override" type="yjsglist" default="1" label="YJSG_HTAG_OVR_LABEL" description="YJSG_HTAG_OVR_DESC">
+				<option value="1"  enable="selectors_override_type|css_font_family|google_font_family|affected_selectors|fontfacekit_font_family">Yes</option>
+				<option value="2" disable="selectors_override_type|css_font_family|google_font_family|affected_selectors|fontfacekit_font_family">No</option>
+			</field>
+			<field name="selectors_override_type" type="yjsglist" default="2" label="YJSG_HTAG_OVR_TYPE_LABEL" description="YJSG_HTAG_OVR_TYPE_DESC">
+				<option value="1" enable="css_font_family|affected_selectors" disable="google_font_family|fontfacekit_font_family">CSS</option>
+				<option value="2" enable="google_font_family|affected_selectors" disable="css_font_family|fontfacekit_font_family">Google Font</option>
+				<option value="3" enable="fontfacekit_font_family" disable="google_font_family|css_font_family|affected_selectors">@font-face kit</option>
+			</field>
+			<field name="google_font_family" type="yjsgtext" default="Lato:400,300,700,900|sans-serif|400" label="YJSG_G_FONT_FAM_LABEL" description="YJSG_G_FONT_FAM_DESC" size="80" />
+	<field name="affected_selectors" type="textarea" rows="8" cols="50" default="h1,h2,h3,h4,h5,h6,.article_title,.module_title,.pagetitle, body,.hikashop_product_right_part .hikashop_cart_input_button,.hikashop_product_stock .hikashop_product_quantity_field" label="YJSG_AFF_SELECTORS_LABEL" description="YJSG_AFF_SELECTORS_DESC"/>
+		</fieldset>
+		<fieldset name="YJSG_LOGO_LABEL">
+			<field name="logo_width" type="yjsgtext" default="140px" label="YJSG_LOGO_WIDTH" description="YJSG_LOGO_WIDTH_DESC" />
+			<field name="logo_height" type="yjsgtext" default="100px" label="YJSG_LOGO_HEIGHT" description="YJSG_LOGO_HEIGHT_DESC" />
+		</fieldset>
+		<!-- Top Menu Settings -->
+		<fieldset name="YJSG_TOP_MENU_LABEL">
+			<field name="top_menu_location" type="yjsglist" default="1" label="YJSG_TOP_MENU_LOCATION_LABEL" description="YJSG_TOP_MENU_LOCATION_DESC">
+				<option value="0">YJSG_TOP_MENU_LOCATION_OPTION_FLEXIBLE</option>
+				<option value="1">YJSG_TOP_MENU_LOCATION_OPTION_INHEADER</option>
+			</field>
+			<field name="default_menu_style" type="yjsglist" default="2" label="YJSG_DEF_MENU_STYLE_LABEL" description="YJSG_DEF_MENU_STYLE_DESC">
+				<option value="1" enable="yjsg_menu_offset|sub_width|yjsg_menu_top_distance|yjsg_menu_side_distance" disable="default_menu_animation|yjsg_menu_animation_speed">YJSG_DEF_TOP_MENU_OPTION_DROPDOWN</option>
+				<option value="2" enable="default_menu_animation|yjsg_menu_animation_speed|yjsg_menu_offset|sub_width|yjsg_menu_top_distance|yjsg_menu_side_distance">YJSG_DEF_TOP_MENU_OPTION_SMOOTHDROPDOWN</option>
+				<option value="5" disable="default_menu_animation|yjsg_menu_top_distance|yjsg_menu_side_distance|yjsg_menu_animation_speed|yjsg_menu_offset|sub_width">YJSG_DEF_TOP_MENU_OPTION_SPLIT</option>
+				<option value="6" disable="default_menu_animation|yjsg_menu_top_distance|yjsg_menu_side_distance|yjsg_menu_animation_speed|yjsg_menu_offset|sub_width">YJSG_DEF_TOP_MENU_OPTION_MODULEPOSITION</option>
+			</field>
+		</fieldset>
+		<fieldset name="YJSG_DEF_GRID_LABEL">
+			<field name="css_width" type="yjsgtext" default="1400" label="YJSG_DEF_SITE_WIDTH_LABEL" description="YJSG_DEF_SITE_WIDTH_DESC" />
+		</fieldset>
+		<!-- Advanced Options -->
+		<fieldset name="YJSG_ADV_LABEL">
+			<field name="bootstrap_version" type="yjsglist" default="bootstrap3" label="YJSG_BSV_LABEL" description="YJSG_BSV_DESC" >
+				<option value="bootstrapoff">None</option>
+				<option value="bootstrap2">Bootstrap2</option>
+				<option value="bootstrap3">Bootstrap3</option>
+			</field>
+		</fieldset>
+		<!-- Custom settings -->
+		<fieldset name="CUSTOM_TEMP_LABEL">
+		  <field name="layoutsettings" type="yjsgparamtitle" default="Layout settings"/>
+		  <field name="layoutType" type="yjsglist" default="2"  label="Default layout type" description="Boxed or full width layout. Boxed layout will show your body tag bacjground color or image" >
+			<option value="1">Full width</option>
+			<option value="2">Boxed</option>
+		  </field>
+		  <field name="backgroundType" type="yjsglist" default="image" label="Body background type" description="You can choose from pattern,image or color" >
+			<option value="pattern">Pattern</option>
+			<option value="image">Image</option>
+			<option value="color">Color</option>
+		  </field>
+		  <field name="defaultPattern" type="yjsgbackgrounds" default="pattern1.jpg" label="Body pattern" description="Default body background pattern" directory="templates/bruno/images/patterns" hide_default="blank" exclude="index.html" stripext="" />
+		  <field name="defaultbgImage" type="yjsgbackgrounds" default="background1.jpg" label="Body background image" description="Default body background image if boxed width" directory="templates/bruno/images/backgrounds" hide_default="blank" exclude="index.html" stripext="" />
+		  <field name="bodybgcolor" type="yjsgcolor" label="Body background color" default="#efefef" description="Default body background color" />
+		  <field name="pagePrefix" type="yjsgtext" default="" label="Page prefix" description="You can add custom page prefix wich will assing your custom css class to a body tag. This way you can style all template tags based on this class. Example;body.myclass .module_title could receive bigger font-size" />
+		  <field name="hoversettings" type="yjsgparamtitle" default="Hover effect and scroll reveal switch"/>
+		  <field name="hovereffect" type="yjsglist" default="1" label="Activate image hover effect" description="When set to yes image hover effect will be active">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		  </field>
+		  <field name="scrolleffect" type="yjsglist" default="1" label="Scroll reveal switch" description="Turn Scroll reveal effect on/off">
+			<option value="0">Off</option>
+			<option value="1">On</option>
+		  </field>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,264 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+html body { line-height: 28px; }
+/* Module and Items titles */
+.article_title, .module_title { font-size: 170%; }
+/* Top menu*/
+#yjsgheadergrid #topmenu_holder { margin: 34px 0; }
+ul.yjsgmenu > li.level0 { margin: 0 5px; }
+.horiznav a { font-size: 85%; font-weight: 700; text-transform: uppercase; }
+ul.yjsgmenu ul.subul_main li a { font-size: 80%; }
+ul.yjsgmenu li a span.yjm_desc { font-size: 100%; text-transform: capitalize; }
+ul.yjsgmenu span.child a:after { font-size: 6px; right: 10px; }
+/*side menu*/
+.defaultmenu li a { line-height: 35px; }
+ul.defaultmenu li a:before, ul.defaultmenu li a:after { font-size: 6px; }
+/* top level menu items */
+ul.yjsgmenu li a, ul.yjsgmenu.megadropline a.dlevel1a, ul.yjsgmenu.megadropline .cleardropline, ul.yjsgmenu.megadropline .cleardropline { padding: 0px 20px; height: 32px; line-height: 32px; }
+ul.yjsgmenu a span.yjm_has_desc, ul.yjsgmenu a span.yjm_has_all, ul.yjsgmenu.megadropline a.dlevel1a span.yjm_has_desc, ul.yjsgmenu.megadropline a.dlevel1a span.yjm_has_all { padding: 10px 0; }
+/* sub levels menu items */
+ul.yjsgmenu ul li a { line-height: 40px; }
+ul.yjsgmenu ul a span.yjm_has_desc, ul.yjsgmenu ul a span.yjm_has_all { line-height: normal; padding: 10px 0; }
+/* Switcher */
+#layout_type { display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body.ispattern { background-repeat: repeat; background-attachment: fixed; }
+body.isimage { background-repeat: no-repeat; background-position: center top; background-size: cover; background-attachment: fixed; }
+/*boxed*/
+#layout_type.yjsgsitew .yjsg_grid, #layout_type.yjsgsitew .holders { padding: 70px 55px; }
+#layout_type.yjsgsitew #yjsgheadergrid.yjsg_grid, #layout_type.yjsgsitew .search-overlay .yjsg_grid { padding: 15px 0; }
+#layout_type.yjsgsitew #yjsgbodytop.yjsg_grid { padding: 0 0 15px 0; }
+#layout_type.yjsgsitew #yjsgbodybottom.yjsg_grid { padding: 15px 0 0 0; }
+#layout_type.yjsgsitew .extrapos1.yjsgsitew, #layout_type.yjsgsitew .extrapos2.yjsgsitew, #layout_type.yjsgsitew .extrapos3.yjsgsitew, #layout_type.yjsgsitew .extrapos4.yjsgsitew, #layout_type.yjsgsitew .extrapos5.yjsgsitew { padding: 70px; }
+#layout_type.yjsgsitew #pathway { margin: 0 55px 70px 55px; }
+#layout_type.yjsgsitew #header, #layout_type.yjsgsitew #footer { padding: 0 70px; }
+#layout_type.yjsgsitew .yjsglogo { right: 70px; }
+#layout_type.yjsgsitew .gridsfx-bbestsellers { padding: 0 70px; }
+#layout_type.yjsgsitew .gridsfx-bbestsellersbottom { padding: 30px 70px 70px 70px; }
+#layout_type.yjsgsitew .gridsfx-k2custom { padding: 0 55px; }
+/* Border radius */
+.yjsgmenu li.level0 > a, .yjsgmenu li.level0 > span > a, .button-color, .button-dark, .button-white, .slide-price, .slidersfx-yjsgsfx-bslides ul.yjsgsliderPagination li a, .btestemonials img, .slidersfx-yjsgsfx-btestemonials a.yjsgsliderNav, .bnewsletter .inputbox-email, .binfos .yjsg-col-1-3 span, div.itemCommentsForm form input#submitCommentButton, div.k2Pagination ul, .button, a.readon, .yjsg-element-holder input, .yjsg-element-holder select, .yjsg-form .inputbox, #pathway, ul.yjsg-pagination-links, .yjsg-pager-links .pager li.previous > a, .yjsg-pager-links .pager li.next > a, .tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li a, .yj-shop-icon, .hikashop_product_stock .hikashop_product_quantity_field, .search-trigger span, .bcart .hikashop_cart, .hikashop_comment_form input, #hikashop_checkout_login_left_part input, #hikashop_checkout_login_right_part input, #hikashop_checkout_login_left_part select, #hikashop_checkout_login_right_part select, #hikashop_payment_methods tr td input, #hikashop_checkout_coupon input, #hikashop_address_form_span_iframe input, #hikashop_address_form_span_iframe select, form#comment-form input[type="text"] { -webkit-border-radius: 100px; -moz-border-radius: 100px; border-radius: 100px; }
+/* Transition */
+.button-color, .button-dark, .button-white, .slidersfx-yjsgsfx-bslides ul.yjsgsliderPagination li a, .slidersfx-yjsgsfx-btestemonials a.yjsgsliderNav, .binfos .yjsg-col-1-3-in span, .binfos .yjsg-col-1-3 h4, .binfos .yjsg-col-1-3-in, div.itemCommentsForm form input#submitCommentButton, div.k2LatestCommentsBlock ul li span.lcComment, .button, a.readon, .yjsg-pager-links .pager li.previous > a, .yjsg-pager-links .pager li.next > a, .tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li a, .yj-shop-icon, .hikashop_product_listing_image, .search-trigger span, .bcart .hikashop_cart, .bbestsellersbottom img, .yj-hover-effect img { -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
+.search-overlay { -webkit-transition: all 0.4s ease-in-out; -moz-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; transition: all 0.4s ease-in-out; }
+/* Defaults */
+.yjsg_grid, .holders { padding: 70px 0; }
+#yjsgbodytop.yjsg_grid { padding: 0 0 15px 0; }
+#yjsgbodybottom.yjsg_grid { padding: 15px 0 0 0; }
+#pathway { margin: 0 0 70px 0; }
+#pathway .breadcrumb li { text-shadow: none; }
+.header-extrapos1 .yjsg-module-positions { min-height: 50px; line-height: 50px; min-width: 160px; margin: 20px 0; }
+/*next, prev*/
+.yjsg-pager-links .pager li.previous > a { padding-right: 20px; border: none; }
+.yjsg-pager-links .pager li.next> a { padding-left: 20px; border: none; }
+/*pagination*/
+ul.yjsg-pagination-links { overflow: hidden; }
+ul.yjsg-pagination-links > li { display: inline!important; }
+ul.yjsg-pagination-links > li > a, ul.yjsg-pagination-links > li > span { border: none!important; border-radius: 0!important; padding: 9px 15px!important; margin: 0!important; font-weight: 400; background: none!important; }
+ul.yjsg-pagination-links > li:last-child > a, ul.yjsg-pagination-links > li:last-child > span { border: none!important; }
+ul.yjsg-pagination-links > li > a:hover, ul.yjsg-pagination-links > li > span:hover { background: none; }
+/*buttons*/
+.button, a.readon { display: table; height: auto; width: auto; line-height: normal; padding: 10px 25px; border: none; font-size: 100%; }
+a.readon span { height: auto; line-height: normal; padding: 0; }
+/*inputs*/
+.yjsg-element-holder input, .yjsg-element-holder select, .yjsg-form .inputbox { height: auto!important; border: none; padding: 10px 12px!important; box-shadow: none; }
+.yjsg-form .yjsg-form-prepend, .yjsg-form .yjsg-form-append, .yjsg-form .yjsg-form-prepend + .yjsg-form-element { border-radius: 0; }
+/*user profile*/
+.yjsg-form-fieldset legend { text-transform: uppercase; font-weight: bold; }
+.yjsg-userpages.user dl { margin-bottom: 50px; }
+.yjsg-userpages.user dt { margin: 0 auto; padding: 0; background: none; text-transform: uppercase; }
+.yjsg-userpages.user dd { padding: 0; margin: 0 auto 15px auto; }
+/*logout*/
+.yjsg-userpages.logout button { margin: 0 auto; }
+.yjsg-userpages.logout .logout-description { text-align: center; }
+/*search results*/
+dt.result-title { text-transform: uppercase; font-size: 120%; font-weight: 700; margin: 0 auto; }
+dd.result-created { margin-bottom: 30px; }
+/* Buttons */
+.button-color, .button-dark, .button-white { display: table; margin: 0; padding: 10px 25px; font-size: 100%; line-height: normal; }
+/* Module styles */
+.yjsg2 .module_title, .yjsg3 .module_title { text-transform: uppercase; font-weight: 900; font-size: 150%; }
+.yjsg4 .h2_holder, .yjsg5 .h2_holder { padding: 15px 0 0 0; }
+.yjsg4 .module_title, .yjsg5 .module_title { text-transform: uppercase; text-align: center; font-weight: 900; position: relative; margin: 0 auto 30px auto; z-index: 1; }
+.yjsg4 .module_subtitle, .yjsg5 .module_subtitle { position: absolute; left: 0; right: 0; margin: auto; top: -14px; font-size: 200%; z-index: -1; }
+/* Subtitle */
+.bruno-subtitle { display: table; margin: 0 auto; width: 30%; text-align: center; }
+/* Backgrounds */
+.centertop-out { display: block; position: relative; }
+.header-extrapos1 { display: block; float: right; }
+.yjsg1-out, .extrapos2-out, .yjsg5-out, .extrapos5-out { display: block; }
+.extrapos1, .extrapos2, .extrapos3, .extrapos4, .extrapos5 { padding: 70px 15px; }
+.bottom-holder { display: block; }
+#footer { padding-top: 0; padding-bottom: 0; }
+#youjoomla { padding: 35px 0; }
+/* Search */
+.bsearchtrigger { float: right; clear: none; width: 70px; }
+/*trigger*/
+.search-trigger { display: block; overflow: hidden; height: 100px; text-align: center; line-height: 100px; margin: 0 auto; }
+.search-trigger span { width: 30px; height: 30px; line-height: 30px; margin: auto; font-size: 85%; }
+/*overlay*/
+.search-overlay .yjsg_grid { padding: 15px 0; }
+.search-overlay { display: block; overflow: hidden; position: fixed; width: 665px; height: 335px; top: -50%; left: 0; right: 0; margin: auto; visibility: hidden; opacity: 0; padding: 50px; z-index: 10000; }
+/*open*/
+.search-overlay.open { visibility: visible; opacity: 1; top: 15%; }
+/*close*/
+.search-overlay-close { display: table; margin: 0 auto; font-size: 150%; position: absolute; top: 30px; right: 30px; }
+/*module*/
+.bsearch .module_title { text-align: left; }
+.bsearch .yjsg-element-holder { display: block; }
+.bsearch .yjsg-form-group-inline.bsearch { padding: 0; margin: 0 auto; }
+.bsearch .yjsg-element-holder input { margin: 20px 0; padding: 12px 12px!important; font-size: 85%; width: 70%; box-shadow: none; }
+.bsearch .yjsg-form .yjsg-element-holder + .yjsg-element-holder { margin: 0; }
+.bsearch .yjsg-element-holder .button { margin: 0; padding: 10px 25px!important; font-size: 100%; line-height: normal; width: auto; }
+/* Shoping cart */
+.bcart { float: right; clear: none; }
+.bcart .icon { font-size: 130%; padding: 0; }
+.bcart .hikashop_cart { width: auto; height: 30px; min-width: 30px; line-height: 30px; margin: 35px auto; font-size: 70%; text-align: center; padding: 0 9px; }
+.bcart #hikashop_cart span.hikashop_product_price { padding: 0 0 0 10px; }
+/* Main slider */
+.bslides .yjsg-row { margin: 0 auto; }
+.bslides .yjsg-col-1-2, .bslides .yjsg-col-2-3 { position: relative; }
+.bslides .yjsg-col-1-2:first-child, .bslides .yjsg-col-1-3 { padding: 120px 0; }
+/*title*/
+.bslides h4 { margin: 0 auto 30px auto; font-size: 250%; font-weight: 700; }
+.bslides h4 span { display: block; font-weight: 300; font-size: 80%; }
+/*text*/
+.bslides p { font-weight: 300; font-size: 115%; margin: 0 auto 60px auto; }
+/*price*/
+.slide-price { display: table; width: 100px; height: 100px; line-height: 100px; margin: 0; text-align: center; font-size: 130%; font-weight: 900; position: absolute; top: 80px; left: 100px; }
+.slide-price.slide2 { top: 60px; left: 180px; }
+/*image*/
+.slidersfx-yjsgsfx-bslides .yjsgChromes img { width: auto; }
+/*pagination*/
+.slidersfx-yjsgsfx-bslides .yjsgsliderControls { display: block; position: absolute; bottom: 130px; }
+.slidersfx-yjsgsfx-bslides ul.yjsgsliderPagination li a { padding: 0; border: none; text-indent: -9999px; width: 9px; height: 9px; line-height: normal; }
+/* Products */
+.gridsfx-bproducts { padding: 0 0 70px 0; }
+.tabssfx-yjsgsfx-bproducts ul.yjsgsliderPaginationTabs { display: table; margin: 0 auto 60px auto; }
+.tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li a { padding: 10px 25px; margin: 0 10px; line-height: normal; }
+/* Discount */
+/*title*/
+.bdiscount h4 { margin: 0 auto 30px auto; font-size: 180%; font-weight: 900; text-transform: uppercase; line-height: 30px; }
+.bdiscount h4 .discount { display: block; font-size: 200%; margin: 0 0 10px 0; }
+/*text*/
+.bdiscount p { font-weight: 300; font-size: 115%; margin: 0 auto 40px auto; }
+/* Best sellers */
+.gridsfx-bbestsellers { padding: 0; }
+.slidersfx-yjsgsfx-bbestsellers.yjsgxhtml { padding: 0 15px 0 0; }
+.slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml { padding: 0 0 0 15px; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgChromes img { width: auto; }
+/*pagination*/
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderControls { position: absolute; bottom: 40px; right: 240px; }
+.slidersfx-yjsgsfx-bbestsellers.right .yjsgsliderControls { left: 50px; right: auto; }
+.slidersfx-yjsgsfx-bbestsellers ul.yjsgsliderPagination li a { padding: 0; border: none; text-indent: -9999px; width: 9px; height: 9px; line-height: normal; }
+.bbestsellers .yjsg-row { margin: 0 auto; padding: 0; }
+.bbestsellers .yjsg-col-1-2, .bbestsellers.right .yjsg-col-1-2:last-child { padding: 0; }
+.bbestsellers .yjsg-col-1-2:last-child { padding: 60px 15px; }
+.bbestsellers.right .yjsg-col-1-2:first-child { padding: 60px 15px 60px 50px; }
+.bbestsellers.right .yjsg-col-1-2 img { float: right; }
+/*title*/
+.bbestsellers h4 { margin: 0 auto 20px auto; font-size: 170%; font-weight: 700; }
+.bbestsellers h4 span { display: block; font-weight: 300; font-size: 80%; }
+/*text*/
+.bbestsellers p { font-weight: 300; font-size: 115%; margin: 0 auto 30px auto; }
+/*best sellers bottom*/
+.gridsfx-bbestsellersbottom { padding: 30px 0 70px 0; }
+.bbestsellersbottom .yjsg-row { padding: 0; margin: 0 -30px; }
+.bbestsellersbottom .yjsg-col-1-5-in { display: block; width: 100%; padding: 0; position: relative; }
+/*title*/
+.bbestsellersbottom a { font-weight: 700; font-size: 110%; line-height: 24px; position: absolute; margin: 0 auto; left: 20px; top: 20px; cursor: pointer; z-index: 1; }
+.bbestsellersbottom a span { display: table; }
+.bbestsellersbottom img { float: right; }
+/*hover*/
+.bbestsellersbottom .yjsg-col-1-5:hover img { opacity: 0.5; }
+/* Testemonials */
+.btestemonials p { width: 50%; margin: 0 auto 40px auto; text-align: center; font-size: 130%; font-weight: 300; }
+.btestemonials p span { font-weight: 900; }
+.btestemonials .testemonials-holder { display: table; margin: 0 auto; }
+.btestemonials img { display: table; float: left; margin: 0 25px 0 auto; padding: 5px; width: auto; }
+.btestemonials h4 { display: inline-table; text-transform: uppercase; font-weight: 900; font-size: 100%; margin: 15px auto; line-height: 20px; }
+.btestemonials h4 span { display: table; text-transform: capitalize; font-weight: normal; }
+/*navigation*/
+.slidersfx-yjsgsfx-btestemonials a.yjsgsliderNav { opacity: 1!important; font-size: 110%; background: none; width: 30px; height: 30px; line-height: 30px; }
+/* Blog news */
+.bblog { margin: 60px auto 0 auto; }
+.bblog .yjme_holder { display: block; overflow: hidden; margin: 0 -30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.bblog .yjme_item { display: block; overflow: hidden; float: left; clear: none; width: 33%; padding: 0 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.bblog .yjme_item_in { padding: 0; margin: 0 auto; background: none; border: none; }
+/*image*/
+.bblog .yjme_item div.imageholder { padding: 0; border: none; background: none; margin: 0 auto 25px auto; width: 100%!important; height: auto!important; }
+.bblog .yjme_item a.item_image, .bblog .yjme_item a.item_image img { width: 100%!important; height: auto!important; }
+/*title*/
+.bblog .yjme_item a.item_title { text-align: center; font-size: 120%; line-height: normal; margin: 0 auto 20px auto; }
+/*intro*/
+.bblog .yjme_item p.item_intro { text-align: center; margin: 0 auto 30px auto; }
+/*read more*/
+.bblog .button-color { margin: 0 auto; }
+/* Newsletter */
+.bnewsletter .newsletter-left { display: block; float: left; width: 50%; }
+/*title*/
+.bnewsletter .newsletter-left h4 { text-transform: uppercase; font-size: 170%; font-weight: 900; position: relative; z-index: 1; }
+.bnewsletter .newsletter-left h4 span { position: absolute; left: 0; margin: auto; font-size: 200%; z-index: -1; top: -14px; }
+.bnewsletter p { font-size: 115%; }
+/*form*/
+.bnewsletter form { display: block; overflow: hidden; width: 50%; padding: 20px 0; }
+.bnewsletter .inputbox-email { border: none; box-shadow: none; width: 80%; line-height: normal; padding: 12px 15px; font-size: 80%; font-style: italic; float: left; margin: 0 20px 0 auto; }
+/*button*/
+.bnewsletter .button-color { height: auto; line-height: normal; padding: 10px 25px; }
+/* Info's */
+.binfos .yjsg-row { padding: 0; }
+.binfos .yjsg-col-1-3-in { display: block; padding: 25px; }
+/*icon*/
+.binfos .yjsg-col-1-3 span { display: table; width: 60px; height: 0px; text-align: center; line-height: 60px; font-size: 180%; float: left; margin: 12px 30px 12px auto; }
+/*title*/
+.binfos .yjsg-col-1-3 h4 { font-weight: 900; font-size: 100%; text-transform: uppercase; margin: 0 auto 10px auto; }
+/*intro*/
+.binfos .yjsg-col-1-3 p { display: table; margin: 0; }
+/* About bruno */
+.gridsfx-baboutfooter { padding: 70px 0 10px 0; }
+.baboutfooter p { margin: 0 auto 20px auto; }
+.baboutfooter span { display: block; overflow: hidden; padding: 20px 0; }
+/* Footer list */
+.bfooterlist h4 { font-size: 110%; text-transform: uppercase; font-weight: 700; margin: 0 auto 20px auto; }
+.bfooterlist li { list-style-type: none; }
+.bfooterlist li a { line-height: normal; padding: 12px 0; display: block; }
+/* K2 Custom module */
+.gridsfx-k2custom { padding: 0; }
+.k2custom .yjsg-row { padding: 0; }
+.k2custom .yjsg-col-1-2:first-child { padding: 90px 15px 0 15px; }
+.k2custom h4 { font-size: 170%; text-transform: uppercase; font-weight: 900; margin: 0 auto 10px auto; }
+.k2custom p { font-weight: 300; font-size: 115%; margin: 0 auto 20px auto; }
+/* Latest products */
+.bproductslatest div.hikashop_products { margin: 0 -30px; }
+.bproductslatest div.hikashop_product { width: 20%!important; }
+.bproductslatest .hikashop_listing_img_title { padding: 0 0 20px 0; }
+/* RTL */
+.yjsgrtl .header-extrapos1, .yjsgrtl .bsearchtrigger, .yjsgrtl .bcart, .yjsgrtl div.itemComments ul.itemCommentsList li span.commentLink { float: left; }
+.yjsgrtl .bslides .yjsg-col-1-2, .yjsgrtl .bslides .yjsg-col-1-3, .yjsgrtl .bslides .yjsg-col-2-3, .yjsgrtl .bdiscount .yjsg-col-1-3, .yjsgrtl .bdiscount .yjsg-col-2-3, .yjsgrtl .bnewsletter .newsletter-left, .yjsgrtl div.subCategory a.subCategoryImage, .yjsgrtl #k2Container .yjk2-details > div, .yjsgrtl div.itemAuthorBlock img.itemAuthorAvatar, .yjsgrtl div.itemComments ul.itemCommentsList li img, .yjsgrtl div.userBlock img, .yjsgrtl a.moduleItemImage, .yjsgrtl div.k2LatestCommentsBlock ul li a.lcAvatar img, .yjsgrtl .yjsg-col-1-2.hikashop_product_left_part, .yjsgrtl .yjsg-col-1-2.hikashop_product_right_part { float: right; }
+.yjsgrtl div.subCategory a.subCategoryImage { margin: 0 auto 0 50px; }
+.yjsgrtl div.itemAuthorBlock img.itemAuthorAvatar, .yjsgrtl div.itemComments ul.itemCommentsList li img, .yjsgrtl div.userBlock img, .yjsgrtl a.moduleItemImage, .yjsgrtl div.k2LatestCommentsBlock ul li a.lcAvatar img { margin: 0 auto 0 40px; }
+.yjsgrtl div.k2LatestCommentsBlock ul li span.lcComment { clear: none; }
+.yjsgrtl #k2Container .yjk2-details > div { margin: 0 0 0 15px; }
+.yjsgrtl .search-overlay { background-position: 40px center; }
+.yjsgrtl .slide-price { left: auto; right: 100px; }
+.yjsgrtl .bsearch .module_title, .yjsgrtl div.k2Pagination, .yjsgrtl .hikashop_product_right_part .hikashop_product_price_full, .yjsgrtl .hikashop_checkout_cart td, .hikashop_checkout_cart thead th { text-align: right!important; }
+.yjsgrtl .slidersfx-yjsgsfx-bbestsellers.yjsgxhtml { padding: 0 0 0 15px; }
+.yjsgrtl .slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml { padding: 0 15px 0 0; }
+.yjsgrtl .bbestsellers { direction: ltr; }
+.yjsgrtl .bnewsletter .newsletter-left h4 span { right: 0; left: auto; }
+/* Responsive menu */
+span.yjmm_select { border: none; -webkit-border-radius: 100px; -khtml-border-radius: 100px; -moz-border-radius: 100px; border-radius: 100px; font-size: 80%; text-transform: uppercase; font-weight: 700; }
+span.yjmm_select:after { font-size: 6px; }
+/* Hover effect */
+.yj-hover-effect { display: block; overflow: hidden; }
+.yj-hover-effect:hover img { opacity: 0.5; }

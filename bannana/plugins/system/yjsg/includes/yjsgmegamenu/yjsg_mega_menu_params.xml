@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params" addfieldpath="/plugins/system/yjsg/includes/yjsgmegamenu/elements">
+		<fieldset name="YJSG_MEGA_MENU" label="YJSG_MEGA_MENU_LABEL">
+			<field name="yj_menu_icon_prefix" type="yjsgfa" class="yjsg-fa" default="" label="YJSG_MEGA_MENU_FABEFORE_LABEL" description="YJSG_MEGA_MENU_FABEFORE_DESC" />
+			<field name="yj_menu_icon_suffix" type="yjsgfa" class="yjsg-fa" default="" label="YJSG_MEGA_MENU_FAAFTER_LABEL" description="YJSG_MEGA_MENU_FAAFTER_DESC" />
+			<field name="yj_menu_sub_title" type="textarea" filter="raw" rows="3" cols="40" default="" label="YJSG_MEGA_MENU_SUBTITLE_LABEL" description="YJSG_MEGA_MENU_SUBTITLE_DESC" />
+			<field name="yj_hide_indicator" type="radio" class="yjsg-radio-group" default="0" label="YJSG_MEGA_MENU_HIDESUBITEMS_LABEL" description="YJSG_MEGA_MENU_HIDESUBITEMS_DESC">
+				<option value="1">YJSG_YES</option>
+				<option value="0">YJSG_NO</option>
+			</field>
+			<field name="yj_group_holder" type="radio" class="yjsg-radio-group" default="0" label="YJSG_MEGA_MENU_GROUPHOLDER_LABEL" description="YJSG_MEGA_MENU_GROUPHOLDER_DESC">
+				<option value="1">YJSG_YES</option>
+				<option value="0">YJSG_NO</option>
+			</field>
+			<field name="yj_menu_holder_width" type="text" default="" label="YJSG_MEGA_MENU_GROUPHOLDERWIDTH_LABEL" description="YJSG_MEGA_MENU_GROUPHOLDERWIDTH_DESC" />
+			<field name="yj_menu_groups_count" type="list" default="0" label="YJSG_MEGA_MENU_SUBGROUPCOUNT_LABEL" description="YJSG_MEGA_MENU_SUBGROUPCOUNT_DESC" >
+				<option value="0">0</option>
+				<option value="1">J1</option>
+				<option value="2">J2</option>
+				<option value="3">J3</option>
+				<option value="4">J4</option>
+				<option value="5">J5</option>
+				<option value="6">J6</option>
+			</field>
+			<field name="yj_sub_group_width" type="textarea" rows="3" cols="40" default="" label="YJSG_MEGA_MENU_SUBGROUPWIDTH_LABEL" description="YJSG_MEGA_MENU_SUBGROUPWIDTH_DESC" />
+			<field name="yj_item_type" type="radio" class="yjsg-radio-group" default="0" label="YJSG_MEGA_MENU_ITEMTYPE_LABEL" description="YJSG_MEGA_MENU_ITEMTYPE_DESC" >
+				<option value="0">YJSG_MEGA_MENU_ITEMTYPE_OPTION_NORMALLINK</option>
+				<option value="1">YJSG_MEGA_MENU_ITEMTYPE_OPTION_MODULE</option>
+				<option value="2">YJSG_MEGA_MENU_ITEMTYPE_OPTION_MODULEPOSITION</option>
+			</field>
+			<field name="yj_menu_show_title" type="list" default="1" label="YJSG_MEGA_MENU_SHOWTITLE_LABEL" description="YJSG_MEGA_MENU_SHOWTITLE_DESC" >
+				<option value="1">YJSG_YES</option>
+				<option value="2">YJSG_NO</option>
+			</field>
+			<field name="yj_mod_id" id="yj_mod_id" type="sql" default="0" multiple="multiple" size="10" description="YJSG_MEGA_MENU_SELECTMODULES_DESC" label="YJSG_MEGA_MENU_SELECTMODULES_LABEL" query="SELECT id, module, title FROM #__modules WHERE  `client_id`=0 AND module != 'mod_mainmenu' ORDER BY position ASC" key_field="id" value_field="title" />
+			<field name="yj_position" id="yj_position" type="sql" default="0" multiple="multiple" size="10" description="YJSG_MEGA_MENU_SELECTPOSITIONS_DESC" label="YJSG_MEGA_MENU_SELECTPOSITIONS_LABEL" query="SELECT DISTINCT position FROM #__modules ORDER BY position ASC" key_field="position" value_field="position"/>
+		</fieldset>
+	</fields>
+</form>

@@ -1,0 +1,170 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimplegrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+body { color: #888888; }
+/* links highlight and fa deviders */
+a, .highlight, [class*='facolor'].fa:before { color: #22A7F0; }
+/* hovers */
+a:focus, a:hover { color: #212121; }
+/* text highlight */
+::selection { background: #22A7F0; color: #fff; }
+::-moz-selection {
+ background: #22A7F0;
+ color:#fff;
+}
+/* headings */
+h1, h2, h3, h4, h5, h6 { color: #212121; }
+.yjsg-sub-heading, .yjsg-sticky-menu a.active-scroll, [data-sticky-block] a.active-scroll:before { border-color: #22A7F0; }
+/* logo */
+#logo { background: url(../images/blue/logo.png) no-repeat 0px 0px; }
+/* newsitems */
+#article-index ul { border: 1px solid #dcdcdc; }
+#article-index ul li { border-bottom: 1px solid #dcdcdc; }
+.newsitem_tools { color: #888; }
+/* rating stars */
+.view-article .yjsg-rating:hover .fa-star, .fa-star.rated { color: #FC0; }
+/* form elements  */
+.yjsg-form-element, .inputbox { }
+.yjsg-form-element, .inputbox:focus { }
+/*Top menu */
+#topmenu_holder, .ulholder.dlevel1 { background: none; }
+.yjsgmenu ul, .yjsgmenu li.holdsgroup ul ul { background: #fff; border: none; }
+.yjsgmenu li a { color: #bdbdbd; }
+.yjsgmenu li a:hover { color: #fff; }
+.yjsgmenu ul li { border-bottom: 1px solid #EDEDED; }
+.yjsgmenu li.level0 > a.activepath, .yjsgmenu li.level0 > a:hover, .yjsgmenu li.level0 > a:focus, .yjsgmenu li.level0 > span > a.activepath, .yjsgmenu li.level0 > span > a:hover, .yjsgmenu li.level0 > span > a:focus, .yjsgmenu a.activepath, .yjsgmenu a:hover, .yjsgmenu a:focus, .yjsgmenu li:hover > .child a { color: #fff; }
+/* has child arrows */
+.yjsgmenu span.child a:after { content: "\f111"; }
+.yjsgmenu ul span.child a:after { content: "\f111"; }
+.yjsgmenu ul span.child a:hover:after { content: "\f111"; }
+/* side menu */
+.defaultmenu li a { border-bottom: 1px solid #EBEBEB; }
+.defaultmenu a.isactivea, .defaultmenu li a:hover { color: #121212; }
+.defaultmenu li a:before { content: "\f111"; }
+/* footer logo  */
+.yjsglogo { background: url(../images/blue/yjsglogo.png) no-repeat center center; }
+/* responsive menu */
+span.yjmm_select { color: #212121; background: #f6f6f6; }
+span.yjmm_select:after { content: "\f111"; }
+/* RTL */
+/* has child arrows */
+.yjsgrtl ul.yjsgmenu ul span.child a:after { content: "\f111"; }
+/* side menu */
+.yjsgrtl ul.defaultmenu li a:before { content: "\f111"; }
+/* Switcher */
+#layout_type { background: #fff; }
+/* Defaults */
+.bottom-holder .yjsg-module-positions { border-color: #2C3847; }
+/*next, prev*/
+.yjsg-pager-links .pager li.previous > a { background: #f6f6f6; color: #212121; }
+.yjsg-pager-links .pager li.next > a { background: #f6f6f6; color: #212121; }
+.yjsg-pager-links .pager li.previous > a:hover { color: #fff; }
+.yjsg-pager-links .pager li.next > a:hover { color: #fff; }
+/*pagination*/
+ul.yjsg-pagination-links { background: #f6f6f6; }
+ul.yjsg-pagination-links > li > a, ul.yjsg-pagination-links > li > span { border-right: 1px solid #ECECEC!important; }
+/*buttons*/
+.button, a.readon { color: #fff; }
+/*hover*/
+.button:hover, a.readon:hover { background: #212121; color: #fff; }
+/*inputs*/
+.yjsg-element-holder input, .yjsg-element-holder select, .yjsg-form .inputbox { background: #f6f6f6!important; }
+/*user profile*/
+.yjsg-userpages.user dt { color: #212121; }
+/*search results*/
+dt.result-title, dt.result-title a { color: #212121; }
+/* Buttons */
+.button-color, .button-dark, .button-white { color: #fff; }
+.button-dark { background: #212121; }
+.button-white { color: #212121; background: #fff; -webkit-box-shadow: 0 0 5px 0 #EBEBEB; box-shadow: 0 0 5px 0 #EBEBEB; }
+/*hover*/
+.button-color:hover { color: #fff; background: #212121; }
+.button-dark:hover, .button-white:hover { color: #fff; }
+/* Module styles */
+.yjsg4 .module_subtitle, .yjsg5 .module_subtitle { color: #F1F1F1; }
+/*dark bg*/
+.yjsg1-out .yjsg4 .module_subtitle, .extrapos2-out .yjsg4 .module_subtitle, .yjsg5-out .yjsg4 .module_subtitle, .extrapos5-out .yjsg4 .module_subtitle, .yjsg1-out .yjsg5 .module_subtitle, .extrapos1-out .yjsg5 .module_subtitle, .yjsg5-out .yjsg5 .module_subtitle, .extrapos5-out .yjsg5 .module_subtitle { color: #E9E9E9; }
+.bottom-holder .yjsg4 .module_title, .bottom-holder .yjsg5 .module_title { color: #fff; }
+.bottom-holder .yjsg4 .module_subtitle, .bottom-holder .yjsg5 .module_subtitle { color: #202932; }
+/* Subtitle */
+.bruno-subtitle { color: #888888; }
+/* Backgrounds */
+.centertop-out { -webkit-box-shadow: 0 0 15px 0 #D9D9D9; box-shadow: 0 0 15px 0 #D9D9D9; }
+.yjsg1-out, .extrapos2-out, .yjsg5-out, .extrapos5-out { background: #f6f6f6; }
+.bottom-holder { background: #121921; }
+#youjoomla { border-top: 1px solid #2a3038; }
+/* Colors */
+.bottom-holder h1, .bottom-holder h2, .bottom-holder h3, .bottom-holder h4, .bottom-holder h5, .bottom-holder h6 { color: #fff; }
+.bottom-holder, .bottom-holder a { color: #9e9e9e; }
+/* Search */
+/*trigger*/
+.search-trigger span { color: #fff; }
+.search-trigger span:hover { color: #fff; background: #212121; }
+/*overlay*/
+.search-overlay { background: #fff url(../images/search-img.png) no-repeat right center; -webkit-box-shadow: 0 0 15px 0 #D9D9D9; box-shadow: 0 0 15px 0 #D9D9D9; }
+/*module*/
+.bsearch .yjsg-element-holder input { color: #c8c8c8; }
+.bsearch .yjsg-element-holder .button { color: #fff; }
+.bsearch .yjsg-element-holder .button:hover { background: #212121!important; color: #fff!important; }
+/* Shoping cart */
+.bcart .icon, .bcart #hikashop_cart span.hikashop_product_price { color: #fff; }
+.bcart .hikashop_cart { color: #fff; }
+/*hover*/
+.bcart .hikashop_cart:hover { background: #212121; }
+.bcart .hikashop_cart:hover span.hikashop_product_price { color: #fff!important; }
+/* Main slider */
+/*price*/
+.slide-price { color: #fff; }
+/*pagination*/
+.slidersfx-yjsgsfx-bslides ul.yjsgsliderPagination li a { background: #cfcfcf; }
+/* Products */
+.tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li a { border: 1px solid #dddddd; color: #212121; }
+/*active*/
+.tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li a:hover, .tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li.active a { border: 1px solid; color: #fff; }
+/* Best sellers */
+.slidersfx-yjsgsfx-bbestsellers .yjsgModsChrome { background: #f5f5f5; }
+/*pagination*/
+.slidersfx-yjsgsfx-bbestsellers ul.yjsgsliderPagination li a { background: #cfcfcf; }
+/*best sellers bottom*/
+.bbestsellersbottom .yjsg-col-1-5-in { background: #f5f5f5; }
+/*title*/
+.bbestsellersbottom a { color: #212121; }
+/* Testemonials */
+.btestemonials img { background: #fff; -webkit-box-shadow: 0 0 5px 0 #D9D9D9; box-shadow: 0 0 5px 0 #D9D9D9; }
+.btestemonials h4 { color: #212121; }
+.btestemonials h4 span { color: #616161; }
+/*navigation*/
+.slidersfx-yjsgsfx-btestemonials a.yjsgsliderNav { border: 1px solid #C0C0C0; color: #C0C0C0; }
+/*hover*/
+.slidersfx-yjsgsfx-btestemonials a.yjsgsliderNav:hover { color: #fff; }
+/* Blog news */
+/*title*/
+.bblog .yjme_item a.item_title { color: #212121; }
+/* Newsletter */
+/*title*/
+.bnewsletter .newsletter-left h4 span { color: #E9E9E9; }
+/*form*/
+.bnewsletter .inputbox-email { -webkit-box-shadow: 0 0 5px 0 #EBEBEB; box-shadow: 0 0 5px 0 #EBEBEB; }
+/* Info's */
+.binfos .yjsg-col-1-3-in { background: #f6f6f6; }
+.binfos .yjsg-col-1-3-in:hover { color: #fff; }
+/*icon*/
+.binfos .yjsg-col-1-3 span { background: #dfdfdf; color: #9a9a9a; }
+.binfos .yjsg-col-1-3-in:hover span { background: #fff; }
+/*title*/
+.binfos .yjsg-col-1-3-in:hover h4 { color: #fff; }
+/* About bruno */
+.baboutfooter span { color: #e7e7e7; border-top: 1px solid #2a3038; }
+/* K2 Custom module */
+/* Latest products */
+.bproductslatest .hikashop_subcontainer { -webkit-box-shadow: 0 0 5px 0 #d5d5d5; box-shadow: 0 0 5px 0 #d5d5d5; }

@@ -1,0 +1,252 @@
+/*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla LLC. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla LLC                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+/*----------------------------------------------------------------------
+Common Elements
+----------------------------------------------------------------------*/
+li.even, li.odd { background: none; border-bottom: 1px solid #dedede; margin: 0; padding: 5px 0; }
+#k2Container h1, #k2Container h2, #k2Container h3, #k2Container h4, #k2Container h5, #k2Container h6 { font-family: inherit;/* from body style */ }
+#k2Container .componentheading { margin: 10px 5px; }
+#k2Container { padding: 0; }
+/*----------------------------------------------------------------------
+Category view html/com_k2/default/category.php
+----------------------------------------------------------------------*/
+/* main category*/
+div.itemListCategory { background: #f6f6f6; border: none; margin: 0 auto 50px auto; padding: 50px; }
+/* main category title*/
+div.itemListCategory h2 { display: block; overflow: hidden; padding: 0; margin: 0 auto 10px auto; text-transform: uppercase; font-weight: 700!important; font-size: 150%; }
+/* main category intro */
+div.itemListCategory p { display: table; padding: 0; margin: 0 auto; }
+/* main category image*/
+div.itemListCategory img { padding: 0; margin: 0 40px 0 0; background: none; border: none; }
+div.itemListSubCategories { display: block; overflow: hidden; margin: 0 -15px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+div.subCategoryContainer { display: block; overflow: hidden; padding: 0 15px; margin: 0 auto 80px auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+div.subCategoryContainer:last-child { margin: 0 auto; }
+div.subCategory { background: none; border: none; margin: 0 auto; padding: 0; display: block; overflow: hidden; }
+/* sub cat image*/
+div.subCategory a.subCategoryImage { float: left; margin: 0 50px 0 auto; }
+div.subCategory a.subCategoryImage img, div.subCategory a.subCategoryImage:hover img { background: none; padding: 0; border: none; margin: 0 auto; }
+/* sub cat title */
+div.subCategory h2 { margin: 0 auto 10px auto!important; font-size: 170%!important; }
+/*----------------------------------------------------------------------
+Cat item view  html/com_k2/default/category_item.php
+----------------------------------------------------------------------*/
+div.catItemView { padding: 0; margin: 0 auto 80px auto; }
+/* catItemLinks*/
+div.catItemLinks { margin: 0 0 5px 0!important; padding: 0!important; }
+/* secondary items are same as primary. if you would like to change them just copy
+class name above and add div#itemListSecondary before the class name and space it
+like example below */
+/*div#itemListSecondary h3.catItemTitle{
+	font-size:30px;
+}*/
+/* cat list item listlinks*/
+#itemListLinks { background: none!important; border: none!important; }
+#itemListLinks div.catItemImageBlock { float: left; padding: 5px!important; }
+/*----------------------------------------------------------------------
+Item view html/com_k2/default/item.php
+----------------------------------------------------------------------*/
+div.itemView { padding: 0; }
+/* toolbar fot res, print etc*/
+div.itemToolbar { background: none; border-top: none; border-bottom: 1px solid #dedede; }
+div.itemToolbar ul { float: left; }
+div.itemToolbar ul li { border-right: 1px solid #dedede; border-left: none; }
+/* item text*/
+div.itemIntroText { font-weight: normal; font-size: 100%; padding: 0; color: #b4b4b4; line-height: 28px; margin: 0 auto 20px auto; }
+div.itemIntroText p { padding: 0; margin: 0 auto; }
+div.itemFullText { padding: 0!important; margin: 0!important; }
+div.itemFullText p { padding: 0!important; margin: 0!important; }
+/* ItemLinks*/
+div.itemLinks { margin: 0 auto!important; padding: 0!important; }
+div.itemContentFooter { padding: 0; margin: 0 auto; color: #b4b4b4; border-top: 1px solid #EBEBEB; padding: 10px 0; margin: 20px auto 50px auto; }
+span.itemDateModified { font-size: 90%; }
+/* item author*/
+div.itemAuthorBlock { background: #f6f6f6; border: none; margin: 0 auto 100px auto; padding: 50px; }
+div.itemAuthorBlock img.itemAuthorAvatar { padding: 0; margin: 0 40px 0 0; background: none; border: none; border-radius: 0; }
+div.itemAuthorBlock div.itemAuthorDetails { padding: 0; }
+div.itemAuthorBlock h3.itemAuthorName { display: block; overflow: hidden; padding: 0; margin: 0 auto 10px auto; text-transform: uppercase; font-weight: 700!important; font-size: 150%; }
+div.itemAuthorBlock h3.itemAuthorName a { color: #212121; }
+div.itemAuthorBlock div.itemAuthorDetails p { margin: 0 auto; }
+/* item related*/
+div.itemRelated { }
+div.itemRelated li { border: none!important; }
+div.itemRelated li img { border: 1px solid #dedede; }
+a.itemRelTitle { float: none; clear: both; display: block; }
+/* item navigation*/
+div.itemNavigation { background: none; border-top: 1px solid #dedede; border-bottom: 1px solid #dedede; }
+/* item comments */
+div.itemComments { background: none; border: none; padding: 0; }
+h3.itemCommentsCounter { margin: 0 auto 30px auto!important; font-size: 170%!important; }
+div.itemComments ul.itemCommentsList { display: block; overflow: hidden; margin: 0 auto; }
+div.itemComments ul.itemCommentsList li { background: none; border: none; margin: 0 auto 50px auto; padding: 0; }
+div.itemComments ul.itemCommentsList li.odd { padding: 0 0 0 30px; }
+div.itemComments ul.itemCommentsList li img { padding: 0; margin: 0 30px 0 0; }
+div.itemComments ul.itemCommentsList li span.commentAuthorName { display: block; margin: 0; padding: 0; color: #212121; font-weight: 900; line-height: normal; }
+div.itemComments ul.itemCommentsList li span.commentDate { padding: 0; margin: 0; border-right: none; font-weight: normal; font-size: 100%; color: #D7D7D7; }
+div.itemComments ul.itemCommentsList li p { padding: 0; margin: 0 auto; }
+div.itemCommentsForm h3 { display: block; overflow: hidden; margin: 0; padding: 0; line-height: normal; text-transform: uppercase; font-weight: 900!important; font-size: 170%; }
+div.itemCommentsForm p.itemCommentsFormNotes { border-top: none; padding: 0; margin: 0 auto 20px auto; }
+form#comment-form label { display: none!important; }
+form#comment-form .inputbox { background: #f6f6f6; border: none!important; width: 100%!important; text-indent: 10px; padding: 12px 0px!important; font-size: 90%; margin: 0 auto 15px auto; text-indent: 20px; }
+form#comment-form input[type="text"] { }
+div.itemCommentsForm form input#submitCommentButton { font-size: 100%!important; cursor: pointer; margin: 20px 0!important; border: none; line-height: normal; padding: 10px 25px; height: auto; font-weight: normal; }
+div.itemCommentsForm form input#submitCommentButton:hover { background: #212121; color: #fff; }
+/*----------------------------------------------------------------------
+k2 user items view    html/com_k2/default/user.php
+user page is using same style for items and itembody contents as item view page. 
+if you wish to edit the styles just add class .userView before the class 
+you need to change example: .userView .itemTitle{font-size:30px;}
+----------------------------------------------------------------------*/
+div.userBlock { background: #f6f6f6; border: none; margin: 0 auto 70px auto; padding: 50px; }
+div.userBlock img { padding: 0; margin: 0 40px 0 0; background: none; border: none; border-radius: 0; }
+div.userBlock h2 { display: block; overflow: hidden; padding: 0; margin: 0 auto 10px auto; text-transform: uppercase; font-weight: 700!important; font-size: 150%; }
+div.userBlock div.userDescription { padding: 0; }
+div.userItemView { margin: 0 0 80px 0; }
+/*----------------------------------------------------------------------
+k2 tagitem view    html/com_k2/templates/tag.php
+user tag is using same style for items and itembody contents as item view page. 
+if you wish to edit the styles just add class .tagView before the class 
+you need to change example: .tagView .itemTitle{font-size:30px;}
+----------------------------------------------------------------------*/
+div.tagItemView { margin: 0 0 80px 0; }
+/*----------------------------------------------------------------------
+Latest Item list html/com_k2/default/latest.php
+----------------------------------------------------------------------*/
+.latestItemsCategory { background: #f5f5f5!important; margin: 4px 5px!important; padding: 10px!important; border: none!important; }
+div.latestItemsCategoryImage img { background: none!important; padding: 0px!important; border: 1px solid #dedede!important; margin: 0 auto!important; }
+/*----------------------------------------------------------------------
+Latest Item html/com_k2/default/latest_item.php
+----------------------------------------------------------------------*/
+div.latestItemView { padding: 0; margin: 0 0 60px 0; }
+/*----------------------------------------------------------------------
+Latest Item html/com_k2/default/old_socials.php
+----------------------------------------------------------------------*/
+div.pre25SocialLinks { display: block; overflow: hidden; width: 100%; padding: 0 0 3px 3px; margin: 0; line-height: 20px; border-bottom: 1px solid #dedede; }
+span.preSocialsTitle { display: block; font-weight: bold; margin: 0 10px 0 0; }
+ul.preSocialLinks { margin: 0!important; padding: 0!important; float: left; }
+ul.preSocialLinks li { background: none; float: left; display: inline; margin: 0!important; padding: 0!important; }
+ul.preSocialLinks li a { height: 20px; width: 20px; display: block; overflow: hidden; text-indent: -9999px; margin: 0 8px 0 0; padding: 0!important; background-image: url(../images/k2images/socials.png); background-repeat: no-repeat; background-position: left top; }
+ul.preSocialLinks li a.googlebuzz { background-position: 0 top; }
+ul.preSocialLinks li a.googlebuzz:hover { background-position: 0 bottom; }
+ul.preSocialLinks li a.facebook { background-position: -20px top; }
+ul.preSocialLinks li a.facebook:hover { background-position: -20px bottom; }
+ul.preSocialLinks li a.delicious { background-position: -40px top; }
+ul.preSocialLinks li a.delicious:hover { background-position: -40px bottom; }
+ul.preSocialLinks li a.digg { background-position: -60px top; }
+ul.preSocialLinks li a.digg:hover { background-position: -60px bottom; }
+ul.preSocialLinks li a.stumble { background-position: -80px top; }
+ul.preSocialLinks li a.stumble:hover { background-position: -80px bottom; }
+ul.preSocialLinks li a.technorati { background-position: -100px top; }
+ul.preSocialLinks li a.technorati:hover { background-position: -100px bottom; }
+ul.preSocialLinks li a.reddit { background-position: -120px top; }
+ul.preSocialLinks li a.reddit:hover { background-position: -120px bottom; }
+ul.preSocialLinks li a.myspace { background-position: -140px top; }
+ul.preSocialLinks li a.myspace:hover { background-position: -140px bottom; }
+ul.preSocialLinks li a.twitter { background-position: -160px top; }
+ul.preSocialLinks li a.twitter:hover { background-position: -160px bottom; }
+/*----------------------------------------------------------------------
+Category view html/com_k2/register.php
+----------------------------------------------------------------------*/
+#k2UserPages { background: #f5f5f5; display: block; overflow: hidden; margin: 20px 10px; padding: 10px; border: 1px solid #dedede; }
+#k2UserPages th, #k2UserPages td { background: #f5f5f5!important; text-align: left!important; }
+#k2UserPages td { padding-right: 10px!important; }
+#k2UserPages .componentheading { margin: 10px 0; }
+#k2UserPages input { padding: 10px; text-indent: 4px; text-align: left; margin: 10px 0 0 10px; border: 1px solid #dedede!important; background: #fff; }
+#k2UserPages span.input_file_wrapper { background: url(../images/k2images/browsek2.gif) top left no-repeat; border: none; height: 30px; display: block!important; position: relative!important; width: 220px; overflow: hidden; text-align: right!important; margin: 0 0 0 10px!important; float: left; cursor: pointer; clear: both; }
+#k2UserPages span.input_file_wrapper input.fake-text { display: block; position: absolute; top: 0px; left: 0px; height: 30px; line-height: 30px; padding: 0 0 0 3px!important; margin: 0px!important; width: 153px; background: none!important; border: none!important; font-size: 10px!important; font-weight: bold; }
+/*----------------------------------------------------------------------
+k2 content module
+----------------------------------------------------------------------*/
+.k2ItemsBlock { padding: 0; font-size: 100%; }
+.k2ItemsBlock li.even, .k2ItemsBlock li.odd { background: none; border-bottom: 1px solid #EBEBEB; margin: 0 auto 30px 0; padding: 0 0 30px 0; }
+.k2ItemsBlock li.lastItem { border: none; }
+.moduleItemImage { float: left; border: none; margin: 0 30px 0 auto; }
+a.moduleItemImage img { border: none!important; margin: 0 !important; padding: 0; float: left!important; }
+a.moduleItemTitle, a.moduleItemTitle:visited { font-size: 100%; display: block; margin: 0!important; font-weight: 700; color: #212121; line-height: 21px; }
+div.k2ItemsBlock ul li span.moduleItemDateCreated { font-size: 90%; }
+.moduleItemIntrotext { font-size: 100%; }
+.moduleItemTags { margin: 10px 0; border-bottom: 1px solid #dedede; font-size: 110%; }
+/*----------------------------------------------------------------------
+k2 calendar module
+----------------------------------------------------------------------*/
+div.k2CalendarBlock { height: 230px; }
+table.calendar { width: 100%; font-family: Cambria, serif; }
+table.calendar tr td.calendarCurrentMonth, table.calendar tr td.calendarNavMonthPrev, table.calendar tr td.calendarNavMonthNext { background: none; text-transform: uppercase; font-weight: normal; }
+table.calendar tr td.calendarDayName { background: #f0f0f0; }
+table.calendar tr td { padding: 0px!important; margin: 0!important; font-family: Tahoma, Geneva, sans-serif; font-size: 11px; }
+table.calendar tr td.calendarDateLinked { padding: 0px!important; margin: 0!important; border-collapse: collapse; }
+table.calendar tr td.calendarDate, table.calendar tr td a, table.calendar tr td a:hover, table.calendar tr td.calendarNavMonthPrev, table.calendar tr td.calendarCurrentMonth, table.calendar tr td.calendarNavMonthNext { padding: 5px!important; }
+table.calendar tr td.calendarNavMonthPrev a, table.calendar tr td.calendarNavMonthNext a { font-size: 100%!important; }
+table.calendar tr td.calendarToday, table.calendar tr td.calendarTodayLinked { background: #121212; color: #fff; }
+table.calendar tr td.calendarDateLinked a { background: #f0f0f0; color: #121212; }
+table.calendar tr td.calendarTodayLinked a:hover, table.calendar tr td.calendarDateLinked a:hover { background: #5B5B5B; color: #ececec; }
+table.calendar tr td.calendarDateEmpty { background: #fff; }
+/*----------------------------------------------------------------------
+k2 cats menu
+----------------------------------------------------------------------*/
+div.k2CategoriesListBlock ul, div.k2CategoriesListBlock ul.level0, div.k2CategoriesListBlock ul.level1 { list-style: none; margin: 0; padding: 0; }
+div.k2CategoriesListBlock ul li, div.k2CategoriesListBlock ul li:hover { list-style-type: none; background-image: none; padding: 0; text-align: left; margin: 0 auto; }
+div.k2CategoriesListBlock ul li:last-child { margin-bottom: 60px; }
+.k2CategoriesListBlock ul li a { height: auto; line-height: normal; text-decoration: none; display: block; font-size: 100%; text-decoration: none; text-indent: 0; padding: 15px 0; border-bottom: 1px solid #EBEBEB; }
+/*----------------------------------------------------------------------
+k2 tag cloud module
+----------------------------------------------------------------------*/
+div.k2TagCloudBlock a:hover { background: #5B5B5B; color: #ececec; }
+/*----------------------------------------------------------------------
+k2 comments module
+----------------------------------------------------------------------*/
+div.k2LatestCommentsBlock { padding: 0; margin: 0; font-size: 100%; }
+.k2LatestCommentsBlock li.even, .k2LatestCommentsBlock li.odd { background: none; border-bottom: 1px solid #EBEBEB; margin: 0 auto 30px 0; padding: 0 0 30px 0; }
+.k2LatestCommentsBlock li.lastItem { border-bottom: none; }
+div.k2LatestCommentsBlock ul li a.lcAvatar img { padding: 0; margin: 0 30px 0 auto; border: none; background: none; }
+div.k2LatestCommentsBlock ul li span.lcUsername { display: block; margin: 0; padding: 0; color: #212121; font-weight: 900; line-height: normal; }
+div.k2LatestCommentsBlock ul li span.lcCommentDate { padding: 0; margin: 0; border-right: none; font-weight: normal; font-size: 100%; color: #cacaca; }
+div.k2LatestCommentsBlock ul li span.lcComment { clear: right; font-size: 100%; display: table; color: #212121; }
+/*----------------------------------------------------------------------
+k2 CAT MENU COLOR AND BG CSS
+----------------------------------------------------------------------*/
+/* LINK BG IMAGE */
+.k2CategoriesListBlock ul li a { color: #212121; font-weight: normal; }
+.k2CategoriesListBlock ul li a:hover { background-position: left bottom; }
+/* main caregory link*/
+div.k2CategoriesListBlock ul li.activeCategory a { font-weight: normal; background-position: left bottom; }
+/* sub category links*/
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 li a { color: #212121!important; }
+div.k2CategoriesListBlock ul li.activeCategory ul.level1 li a:hover { color: #212121!important; }
+/* K2 Extras */
+.yjk2-main-holder, .yjk2-main-holder2 { display: block; overflow: hidden; margin: 0; max-width: 98%; }
+.yjk2-main-holder2 { max-width: 96%; }
+/*body*/
+#k2Container .yjk2-body { display: block; overflow: hidden; margin: 0 auto; padding: 0; }
+/*image*/
+#k2Container .yjk2-image { padding: 0!important; margin: 0 auto 30px auto; overflow: hidden; display: block; background: none; border: none; float: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+#k2Container .yjk2-image span { overflow: hidden; display: block; clear: both; margin: 0 auto; }
+#k2Container .yjk2-image span a { display: block; overflow: hidden; border: none; text-align: center; }
+#k2Container .yjk2-image span a img { border: none; padding: 0; overflow: hidden; margin: 0 auto; width: 100%!important; }
+/*header*/
+#k2Container .yjk2-header { display: block; overflow: hidden; clear: both; }
+/*title*/
+#k2Container .yjk2-title { display: block; overflow: hidden; margin: 0; padding: 0; line-height: normal; text-transform: uppercase; font-weight: 900; font-size: 220%; }
+#k2Container .yjk2-title a { color: #212121; }
+/*details*/
+#k2Container .yjk2-details { display: block; overflow: hidden; margin: 0 auto 20px auto; }
+#k2Container .yjk2-details > div { display: table; float: left; margin: 0 15px 0 0; font-weight: normal; border: none; padding: 0; color: #D7D7D7; }
+#k2Container .yjk2-details > div span { font-weight: normal; color: #D7D7D7; }
+/*intro*/
+#k2Container .yjk2-intro { padding: 0; margin: 0 auto 30px auto; }
+/*intro image*/
+#k2Container .itemFullText .yjsg-col-1-4 a, #k2Container .itemFullText .yjsg-col-1-4 img { width: 100%; margin: 0; }
+/*tags*/
+#k2Container .yjk2-tags { display: block; overflow: hidden; margin: 0 auto 20px auto; }
+/*pagination*/
+div.k2Pagination { padding: 50px 0 0 0; margin: 0; text-align: left; border-top: 1px solid #EBEBEB; }

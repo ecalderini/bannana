@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="params" addfieldpath="/plugins/system/yjsg/includes/yjsgmoduleoptions/elements">
+		<fieldset name="YJSG_MENU_MODULE_OPTIONS" label="YJSG_MENU_MODULE_LABEL">
+			<field name="yjsg_menu_module_type" type="list" default="default"  class="yjsg-accordion" label="YJSG_MENU_MODULE_MENUTYPE_LABEL" description="YJSG_MENU_MODULE_MENUTYPE_DESC">
+				<option value="default">YJSG_MENU_MODULE_MENUTYPE_OPTION_DEFAULT</option>
+				<option value="inline">YJSG_MENU_MODULE_MENUTYPE_OPTION_INLINE</option>
+				<option value="accordion">YJSG_MENU_MODULE_MENUTYPE_OPTION_ACCORDION</option>
+				<option value="accordion_notoggle">YJSG_MENU_MODULE_MENUTYPE_OPTION_ACCORDIONNOTOGGLE</option>
+				<option value="navbar">YJSG_MENU_MODULE_MENUTYPE_OPTION_BOOTSTRAPNAVBAR</option>
+				<option value="navbarinverse">YJSG_MENU_MODULE_MENUTYPE_OPTION_BOOTSTRAPNAVBARINVERSE</option>
+				<option value="navpills">YJSG_MENU_MODULE_MENUTYPE_OPTION_BOOTSTRAPNAVPILLS</option>
+			</field>
+		</fieldset>
+	</fields>
+</form>

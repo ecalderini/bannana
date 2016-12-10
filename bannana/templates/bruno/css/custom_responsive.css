@@ -1,0 +1,232 @@
+ /*======================================================================*\
+|| #################################################################### ||
+|| # Package - Joomla Template based on YJSimpleGrid Framework          ||
+|| # Copyright (C) 2010  Youjoomla.com. All Rights Reserved.            ||
+|| # license - PHP files are licensed under  GNU/GPL V2                 ||
+|| # license - CSS  - JS - IMAGE files  are Copyrighted material        ||
+|| # bound by Proprietary License of Youjoomla.com                      ||
+|| # for more information visit http://www.youjoomla.com/license.html   ||
+|| # Redistribution and  modification of this software                  ||
+|| # is bounded by its licenses                                         ||
+|| # websites - http://www.youjoomla.com | http://www.yjsimplegrid.com  ||
+|| #################################################################### ||
+\*======================================================================*/
+@media only screen and (min-width: 240px) and (max-width: 1450px) {
+.yjsgsitew { max-width: 100%!important; width: 1200px!important; margin: 0 auto; }
+.top_menu, .top_menu_poz_navbar, .top_menu_poz.navpills { max-width: 100%!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.yjsgsitew { max-width: 100%!important; width: 100%!important; margin: 0 auto; }
+}
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+#yjsgheadergrid #topmenu_holder { float: none; }
+.header-extrapos1 { display: table; margin: 0 auto!important; float: none; }
+.bcart, .bsearchtrigger { float: none; display: table; margin: 0 auto; }
+.bcart .hikashop_cart { margin: 0 auto; }
+.search-trigger { height: auto; line-height: normal; margin: 20px auto 0 auto; }
+.bruno-subtitle { width: 70%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 425px) {
+.yjsg4 .module_subtitle, .yjsg5 .module_subtitle { top: -2px; font-size: 125%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 720px) {
+.search-overlay { width: 95%; height: auto; }
+}
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.bsearch .module_title { text-align: center; }
+.bsearch .yjsg-element-holder input { width: 100%; }
+.bsearch .yjsg-element-holder .button { margin: 0 auto; }
+.search-overlay { background-size: 50%; background-position: center center; }
+}
+/* Main Slider */
+@media only screen and (min-width: 240px) and (max-width: 1450px) {
+.slidersfx-yjsgsfx-bslides .yjsgsliderControls { bottom: 50px; }
+}
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+.bslides br { display: none; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.bslides .yjsg-col-1-2:first-child, .bslides .yjsg-col-1-3 { padding: 40px 0; }
+.slide-price { top: 40px; }
+}
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.bslides .yjsg-col-1-2, .bslides .yjsg-col-1-3, .bslides .yjsg-col-2-3 { width: 100%; text-align: center; }
+.bslides .button-color { margin: 0 auto; }
+.slidersfx-yjsgsfx-bslides .yjsgChromes img { margin: 0 auto; display: table; }
+.slide-price, .slide-price.slide2 { top: 100px; left: 0; right: 0; margin: auto; }
+.slidersfx-yjsgsfx-bslides .yjsgsliderControls { display: table!important; margin: 0 auto; position: relative; }
+}
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.bslides br { display: none; }
+.slide-price, .slide-price.slide2 { width: 70px; height: 70px; line-height: 70px; top: 20px; font-size: 110%; }
+}
+/* Products */
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+.tabssfx-yjsgsfx-bproducts div.tabpills ul.yjsgsliderPaginationTabs li { display: table; margin: 0 auto 10px auto; float: none; }
+}
+/* Discount */
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.bdiscount .yjsg-col-1-3, .bdiscount .yjsg-col-2-3 { width: 100%; text-align: center; }
+.bdiscount .button-dark { margin: 0 auto 50px auto; }
+}
+/* Best sellers */
+@media only screen and (min-width: 980px) and (max-width: 1450px) {
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderChrome, .slidersfx-yjsgsfx-bbestsellers.right .yjsgsliderChrome { min-height: 390px; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderControls { right: 200px; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.slidersfx-yjsgsfx-bbestsellers.yjsgxhtml, .slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml, .gridsfx-bbestsellers { padding: 0 15px; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1200px) {
+.slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml, .slidersfx-yjsgsfx-bbestsellers.yjsgxhtml { padding: 0 15px; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderControls { right: 38%; }
+}
+@media only screen and (min-width: 720px) and (max-width: 980px) {
+.slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml, .slidersfx-yjsgsfx-bbestsellers.yjsgxhtml { width: 100%!important; margin-bottom: 30px; }
+.bbestsellers .yjsg-col-1-2:first-child { width: auto; padding-right: 50px; }
+.bbestsellers.right .yjsg-col-1-2:first-child { width: 50%; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderControls { right: auto; left: 280px; }
+}
+@media only screen and (min-width: 240px) and (max-width: 720px) {
+.slidersfx-yjsgsfx-bbestsellers.right.yjsgxhtml, .slidersfx-yjsgsfx-bbestsellers.yjsgxhtml { margin-bottom: 30px; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgChromes img, .bbestsellers.right .yjsg-col-1-2 img { display: table; margin: 0 auto; float: none; }
+.bbestsellers .yjsg-col-1-2 { text-align: center; }
+.bbestsellers .button-white { margin: 0 auto; }
+.bbestsellers.right .yjsg-col-1-2:first-child { padding: 60px 30px; }
+.slidersfx-yjsgsfx-bbestsellers .yjsgsliderControls, .slidersfx-yjsgsfx-bbestsellers.right .yjsgsliderControls { right: 0; left: 0; display: table!important; position: relative; margin: 20px auto; }
+}
+/*bottom*/
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.bbestsellersbottom .yjsg-row { margin: 0; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1150px) {
+.bbestsellersbottom .yjsg-col-1-5 { width: 33%; margin: 0 auto 30px auto; }
+.bbestsellersbottom img { width: 40%; }
+.bbestsellersbottom a { left: 30px; top: 30px; }
+.bbestsellersbottom .yjsg-col-1-5:nth-child(4), .bbestsellersbottom .yjsg-col-1-5:nth-child(5) { width: 50%; }
+}
+@media only screen and (min-width: 600px) and (max-width: 780px) {
+.bbestsellersbottom .yjsg-col-1-5 { width: 50%; }
+.bbestsellersbottom .yjsg-col-1-5:nth-child(5) { width: 100%; }
+.bbestsellersbottom .yjsg-col-1-5:nth-child(5) a { left: 50px; top: 50px; font-size: 150%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 600px) {
+.bbestsellersbottom .yjsg-col-1-5, .bbestsellersbottom .yjsg-col-1-5:nth-child(4), .bbestsellersbottom .yjsg-col-1-5:nth-child(5) { width: 100%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 320px) {
+.bbestsellersbottom .yjsg-col-1-5-in { min-height: 160px; }
+.bbestsellersbottom img { margin-top: 40px; }
+}
+/* Testemonials */
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.btestemonials p { width: 90%; }
+.slidersfx-yjsgsfx-btestemonials .yjsgsliderControls { position: relative; }
+}
+/* Blog news */
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.bblog .yjme_holder { margin: 0 auto; }
+}
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+.bblog .yjme_holder { margin: 0 auto; }
+.bblog .yjme_item { width: 100%; margin: 0 auto 50px auto; }
+}
+/* Subscribe */
+@media only screen and (min-width: 240px) and (max-width: 1450px) {
+.bnewsletter .inputbox-email { width: 70%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.bnewsletter .newsletter-left { text-align: center; float: none; width: 100%; }
+.bnewsletter .newsletter-left h4 span { left: 0; right: 0; }
+.bnewsletter form { width: 100%; }
+.bnewsletter .inputbox-email { width: 70%; float: none; margin: 0 auto; display: table; }
+.bnewsletter .button-color { margin: 20px auto 0 auto; }
+}
+ @media only screen and (min-width: 240px) and (max-width: 425px) {
+.bnewsletter .newsletter-left h4 span { top: -2px; font-size: 125%; }
+}
+/* Infos */
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.binfos .yjsg-col-1-3:last-child { margin: 30px auto 0 auto; }
+.binfos .yjsg-col-1-3:last-child span { margin: 0 30px 0 auto; }
+}
+@media only screen and (min-width: 240px) and (max-width: 720px) {
+.binfos .yjsg-col-1-3 { text-align: center; }
+.binfos .yjsg-col-1-3 span, .binfos .yjsg-col-1-3:last-child span { margin: 0 auto 20px auto; display: table; float: none; }
+.binfos .yjsg-col-1-3 p { display: block; text-align: center; }
+}
+/* Footer */
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.yjsgsfx-baboutfooter.yjsgxhtml, .yjsgsfx-bfooterlist.yjsgxhtml { width: 100%!important; text-align: center; }
+.bfooterlist .yjsg-col-1-5, .bfooterlist .yjsg-col-1-5:last-child { width: 20%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 750px) {
+.bfooterlist .yjsg-col-1-5 { width: 33%; margin: 0 auto 30px auto; }
+.bfooterlist .yjsg-col-1-5:nth-child(4), .bfooterlist .yjsg-col-1-5:nth-child(5) { width: 50%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 460px) {
+.bfooterlist .yjsg-col-1-5 { width: 100%!important; }
+}
+/* K2 */
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.yjk2-main-holder, .yjk2-main-holder2 { max-width: 100%!important; }
+div.subCategory, .yjk2-main-holder, .yjk2-main-holder2, #k2Container .yjk2-title, div.itemAuthorBlock h3.itemAuthorName, div.itemAuthorBlock div.itemAuthorDetails p { text-align: center; }
+div.subCategory a.subCategoryImage { float: none!important; margin: 0 auto 50px auto!important; }
+div.subCategory .button-color { margin: 0 auto; }
+#k2Container .yjk2-image, #k2Container .yjk2-image span, #k2Container .yjk2-image span a, #k2Container .yjk2-image span a img { width: 100%!important; height: auto!important; }
+#k2Container .yjk2-details { display: table!important; margin: 0 auto 20px auto!important; }
+#k2Container .button-color { margin: 0 auto; }
+div.itemAuthorBlock img.itemAuthorAvatar, div.userBlock img { float: none; margin: 0 auto 30px auto!important; display: table; }
+}
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+#k2Container .yjk2-details > div { margin: 0 auto 10px auto!important; float: none!important; }
+}
+ @media only screen and (min-width: 240px) and (max-width: 480px) {
+div.subCategory a.subCategoryImage, div.subCategory a.subCategoryImage img { width: 100%; height: auto; }
+}
+/* Hikashop */
+@media only screen and (min-width: 240px) and (max-width: 1450px) {
+.k2custom .yjsg-col-1-2:first-child { padding: 70px 15px 0 15px; }
+div.hikashop_category_image { height: auto!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.k2custom .yjsg-col-1-2 { width: 100%; text-align: center; padding: 70px 15px 50px 15px!important; }
+.k2custom .yjsg-col-1-2:last-child { display: none; }
+.sbox-content-image img { display: block; width: 100%; height: auto; }
+}
+@media only screen and (min-width: 240px) and (max-width: 1050px) {
+div.hikashop_product_image, div.hikashop_product_image_subdiv, div.hikashop_product_image img { width: 100%!important; height: auto!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 720px) {
+div.hikashop_product_right_part, #hikashop_product_price_main .hikashop_product_price_full, .hikashop_listing_comment, .hikashop_form_comment, .hika_comment_listing td, .hikashop_vote_form .hikashop_comment_textarea, #hikashop_checkout_page h1 { text-align: center; }
+tr.hikashop_comment_form_name td { display: table; margin: 0 auto; text-align: center; }
+.hikashop_vote_form .button, #hikashop_checkout_login_left_part .hikashop_cart_input_button, #hikashop_checkout_login_right_part .hikashop_cart_input_button { margin: 0 auto!important; }
+#hikashop_checkout_login_left_part, #hikashop_checkout_login_right_part { width: 100%!important; text-align: center; }
+#hikashop_checkout_login_left_part fieldset { margin: 0 auto; }
+#hikashop_checkout_login_left_part input, #hikashop_checkout_login_right_part input, #hikashop_checkout_login_left_part select, #hikashop_checkout_login_right_part select { width: 98%; }
+#hikashop_checkout_login_right_part tr td { display: block; padding: 10px 0 0 0; }
+}
+@media only screen and (min-width: 240px) and (max-width: 760px) {
+#hikashop_checkout_cart table tr { border: 1px solid #efefef; }
+}
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+div.hikashop_product { width: 100%!important; height: auto!important; }
+div.hikashop_category { width: 100%!important; height: auto!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+.hikashop_product_main_image, .hikashop_product_main_image_subdiv, .hikashop_main_image { width: 100%!important; height: auto!important; }
+}
+/*module bottom*/
+@media only screen and (min-width: 240px) and (max-width: 1250px) {
+.bproductslatest div.hikashop_products { margin: 0 auto!important; }
+.bproductslatest .hikashop_subcontainer { padding: 20px; }
+}
+@media only screen and (min-width: 240px) and (max-width: 980px) {
+.bproductslatest .hikashop_subcontainer { padding: 20px; }
+.bproductslatest div.hikashop_product { width: 33%!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 640px) {
+.bproductslatest div.hikashop_product { width: 50%!important; }
+}
+@media only screen and (min-width: 240px) and (max-width: 420px) {
+.bproductslatest div.hikashop_product { width: 100%!important; }
+}
