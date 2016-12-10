@@ -23,6 +23,8 @@ defined('_JEXEC') or die('Restricted access');
 		if(!empty($this->element->extraData->leftEnd)) { echo implode("\r\n",$this->element->extraData->leftEnd); }
 		?>
   </div>
+  
+  <!-- div dos detalhes -->
   <div id="hikashop_product_right_part" class="yjsg-col-1-2 hikashop_product_right_part <?php echo HK_GRID_COL_6; ?>">
     <?php
 		if(!empty($this->element->extraData->rightBegin))
@@ -82,32 +84,11 @@ defined('_JEXEC') or die('Restricted access');
             if(!empty($this->element->extraData->bottomBegin))
                 echo implode("\r\n",$this->element->extraData->bottomBegin);
             ?>
-      <div id="hikashop_product_description_main" class="hikashop_product_description_main" itemprop="description">
-        <?php
-                echo JHTML::_('content.prepare',preg_replace('#<hr *id="system-readmore" */>#i','',$this->element->product_description));
-                ?>
-      </div>
-      <span id="hikashop_product_url_main" class="hikashop_product_url_main">
-      <?php
-                if (!empty ($this->element->product_url)) {
-                    echo JText :: sprintf('MANUFACTURER_URL', '<a href="' . $this->element->product_url . '" target="_blank">' . $this->element->product_url . '</a>');
-                }
-                ?>
-      </span>
-      <?php
-            $this->setLayout('show_block_product_files');
-            echo $this->loadTemplate();
-            ?>
-      <?php
-            if(!empty($this->element->extraData->bottomMiddle))
-                echo implode("\r\n",$this->element->extraData->bottomMiddle);
-            ?>
-      <?php
-            if(!empty($this->element->extraData->bottomEnd))
-                echo implode("\r\n",$this->element->extraData->bottomEnd);
-            ?>
-    </div>
-    <span id="hikashop_product_price_main" class="hikashop_product_price_main"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+            
+       <!-- BLOCO DE MIGRACAO DO FOOTER  XXX: ecalderini-->
+       
+       
+        <span id="hikashop_product_price_main" class="hikashop_product_price_main"  itemprop="offers" itemscope itemtype="http://schema.org/Offer">
     <?php
 			if ($this->params->get('show_price')) {
 				$this->row = & $this->element;
@@ -127,11 +108,13 @@ defined('_JEXEC') or die('Restricted access');
     </span>
     <?php
 		if(!empty($this->element->extraData->rightMiddle))
-
+		{
 			echo implode("\r\n",$this->element->extraData->rightMiddle);
+		}
 		?>
     <?php
-		if($this->params->get('characteristic_display') != 'list') {
+		if($this->params->get('characteristic_display') != 'list') 
+		{
 			$this->setLayout('show_block_characteristic');
 			echo $this->loadTemplate();
 			?>
@@ -142,7 +125,8 @@ defined('_JEXEC') or die('Restricted access');
 		if (!$this->config->get('ajax_add_to_cart', 1)) {
 			$form = ',\'hikashop_product_form\'';
 		}
-		if (hikashop_level(1) && !empty ($this->element->options)) {
+		if (hikashop_level(1) && !empty ($this->element->options)) 
+		{
 		?>
     <div id="hikashop_product_options" class="hikashop_product_options">
       <?php
@@ -159,7 +143,8 @@ defined('_JEXEC') or die('Restricted access');
     <?php
 			}
 		}
-		if (!$this->params->get('catalogue') && ($this->config->get('display_add_to_cart_for_free_products') || ($this->config->get('display_add_to_wishlist_for_free_products', 1) && hikashop_level(1) && $this->params->get('add_to_wishlist') && $config->get('enable_wishlist', 1)) || !empty($this->element->prices))) {
+		if (!$this->params->get('catalogue') && ($this->config->get('display_add_to_cart_for_free_products') || ($this->config->get('display_add_to_wishlist_for_free_products', 1) && hikashop_level(1) && $this->params->get('add_to_wishlist') && $config->get('enable_wishlist', 1)) || !empty($this->element->prices))) 
+		{
 			if (!empty ($this->itemFields)) {
 				$form = ',\'hikashop_product_form\'';
 				if ($this->config->get('redirect_url_after_add_cart', 'stay_if_cart') == 'ask_user') {
@@ -175,7 +160,9 @@ defined('_JEXEC') or die('Restricted access');
 		if($this->params->get('show_price')){ ?>
     <span id="hikashop_product_price_with_options_main" class="hikashop_product_price_with_options_main"> </span>
     <?php }
-		if(empty ($this->element->characteristics) || $this->params->get('characteristic_display')!='list'){ ?>
+		if(empty ($this->element->characteristics) || $this->params->get('characteristic_display')!='list')
+		{ 
+	?>
     <div id="hikashop_product_quantity_main" class="hikashop_product_quantity_main">
       <?php
 				$this->row = & $this->element;
@@ -184,7 +171,58 @@ defined('_JEXEC') or die('Restricted access');
 				echo $this->loadTemplate();
 				?>
     </div>
-    <?php } ?>
+    <?php 
+		}
+	?>
+       <div class="hikashop_product_bottom_part"></div>
+       
+       
+       <!-- FIM DO BLOCO DE MIGRACAO DO FOOTER  -->     
+            
+            
+            
+            
+            
+      <!-- div do conteudo de texto -->
+      <div id="hikashop_product_description_main" class="hikashop_product_description_main" itemprop="description">
+        <?php
+                echo JHTML::_('content.prepare',preg_replace('#<hr *id="system-readmore" */>#i','',$this->element->product_description));
+                ?>
+      </div>
+      
+      
+      <!-- aqui exibe alguma url que nao esta configurada para aparecer. -->
+      <span id="hikashop_product_url_main" class="hikashop_product_url_main">
+      <?php
+                if (!empty ($this->element->product_url)) {
+                    echo JText :: sprintf('MANUFACTURER_URL', '<a href="' . $this->element->product_url . '" target="_blank">' . $this->element->product_url . '</a>');
+                }
+                ?>
+      </span>
+      
+      
+      <?php
+            $this->setLayout('show_block_product_files');
+            echo $this->loadTemplate();
+            ?>
+            
+            
+      <?php
+            if(!empty($this->element->extraData->bottomMiddle))
+                echo implode("\r\n",$this->element->extraData->bottomMiddle);
+            ?>
+            
+            
+            
+      <?php
+            if(!empty($this->element->extraData->bottomEnd))
+                echo implode("\r\n",$this->element->extraData->bottomEnd);
+            ?>
+    </div>
+    
+    
+    
+   
     <div id="hikashop_product_contact_main" class="hikashop_product_contact_main">
       <?php
 			$contact = $this->config->get('product_contact',0);
